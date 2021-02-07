@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::selection {
+  color: white;
+  background-color: #0f2027;
+}
+html {
+  scroll-behavior: smooth;
+}
+input {
+  caret-color: red;
+  outline: none;
+  border: none;
+  padding: 0.1rem 0;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.dark {
+  --body-color: linear-gradient(to right, #a1ffce, #faffd1);
+  --black-color: linear-gradient(to left, #a1ffce, #faffd1);
+  --text-color: #000;
+  --bg-color: #7bbacf;
+  --bgdarkest-color: #3f9dbd;
+  --wrapperbg: rgba(116, 148, 255, 0.253);
+  --bgdark-color: rgba(185, 236, 253, 0.205);
+  --specialColor: hsla(195, 50%, 46%, 0.849);
+}
+:root {
+  --body-color: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  --black-color: #000;
+  --text-color: hsl(0, 0%, 100%);
+  --bg-color: #203a43;
+  --bgdark-color: #0f252c;
+  --bgdarkest-color: #0d2229;
+  --wrapperbg: rgba(134, 134, 134, 0.137);
+  --specialColor: hsla(196, 54%, 11%, 0.726);
+}
+
+body {
+  background: var(--body-color);
+  transition: 0.5s all !important;
+  animation-delay: 1s;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+.animate__bounceInLeft {
+  position: relative;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 3.5rem !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold !important;
+  margin: 0 5rem 3rem 5rem !important;
+  color: var(--text-color);
+  animation-duration: 1s;
+  display: block;
+}
+.wrapper {
+  background-color: var(--wrapperbg);
+  display: block;
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 7px var(--bgdark-color);
+}
+.wrapper button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  width: 150px;
+}
+.wrapper button:first-of-type {
+  margin-top: 3rem;
+}
+.wrapper button:active,
+.wrapper button:focus {
+  outline: none;
+  border: none;
+}
+.wrapper button:hover {
+  transform: scale(1.03);
+}
+.pushUpBtn {
+  transition: 0.5s all;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.178);
+}
+#calculateBtn {
+  background-color: var(--specialColor);
+}
+#calculateBtn:hover {
+  background-color: var(--bgdarkest-color);
+}
+
+.pushUpBtn:hover {
+  transform: translate3d(0px, -1px, 0px);
+  background-color: var(--bgdarkest-color);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.521);
+}
+.wrapper p {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+p span {
+  font-weight: bold;
+  color: var(--text-color);
+}
+.fas {
+  display: block !important;
+  line-height: 1.5 !important;
+}
+footer {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 3rem 0;
+  color: var(--text-color);
+  margin-top: 3rem;
+  background: var(--black-color);
+  animation-delay: 1.3s;
+  transition: 2s all;
+}
+
+input {
+  width: 80px;
+  text-align: center;
+  transition: 0.5s all;
+  border: 3px solid var(--text-color);
+  background-color: transparent;
+  border-radius: 3px;
+  color: var(--text-color);
+  font-size: 1.5rem !important;
+  padding: 0 !important;
+}
+.number1:focus {
+  border: transparent;
+  text-align: right;
+}
+.number3:focus {
+  border: transparent;
+  text-align: left;
+}
+footer p {
+  animation-delay: 1s;
+  margin-bottom: 0 !important;
+  animation-duration: 1s;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+ul li {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+.col span {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+.row {
+  margin: 2rem 0 !important;
+}
+.root {
+  font-family: "Lexend Mega", sans-serif;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* animacie */
+/* animacie */
+/* animacie */
+.borderLeftRight {
+  display: inline-block;
+  position: relative;
+  color: #3960bdf8;
+  font-weight: bold;
+}
+.borderLeftRight::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #51a6ec;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.borderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.borderLeftRight:hover {
+  cursor: pointer;
+}
+
+.fa-moon {
+  font-family: "FontAwesome";
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  transform: scale(1.3);
+  color: var(--text-color);
+  transform: rotate(-25deg);
+  animation-delay: 1s;
+}
+
+/* media
+  media
+  media */
+
+@media only screen and (max-width: 490px) {
+  ul li {
+    font-size: 1rem;
+  }
+  #info {
+    font-size: 1.1rem !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  h1.animate__bounceInLeft {
+    font-size: 2.5rem !important;
+  }
+  .wrapper {
+    margin: 4rem auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1.animate__bounceInLeft {
+    font-size: 2rem !important;
+    line-height: 3rem;
+  }
+  .fa-plus {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  h1.animate__bounceInLeft {
+    font-size: 1.8rem !important;
+    line-height: 3rem;
+  }
+  .fa-moon {
+    font-size: 1.5em !important;
+    right: 0px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  h1.animate__bounceInLeft {
+    margin: 0 2rem 0 0 !important;
+  }
+  .wrapper p {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .col-6 input {
+    width: 100px !important;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .col-6 input {
+    width: 50px !important;
+  }
+  .wrapper p {
+    font: 1.5rem sans-serif;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .wrapper p {
+    font: 1rem sans-serif;
+  }
+  .wrapper button {
+    width: 100px !important;
+    font-size: 1rem;
+  }
+}
