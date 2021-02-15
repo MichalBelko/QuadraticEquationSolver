@@ -8,6 +8,7 @@ const number1 = document.querySelector(".number1");
 const root1 = document.querySelector(".root1");
 const root2 = document.querySelector(".root2");
 const info = document.getElementById("info");
+const live = document.getElementById("live");
 
 resetBtn.addEventListener("click", function () {
   for (let i = 0; i <= inputs.length - 1; i++) {
@@ -83,3 +84,19 @@ let setDarkMode = localStorage.getItem("dark");
 if (setDarkMode === "on") {
   darkMode();
 }
+
+setInterval(() => {
+  const today = new Date();
+  const cas =
+    new Intl.DateTimeFormat(navigator.language, {
+      day: "numeric",
+      month: "numeric",
+      year: "numeric",
+    }).format(today) +
+    " " +
+    new Intl.DateTimeFormat(navigator.language, {
+      hour: "numeric",
+      minute: "numeric",
+    }).format(today);
+  live.textContent = cas;
+}, 1);
